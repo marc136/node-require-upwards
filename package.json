@@ -1,0 +1,14 @@
+{
+  "name": "require-upwards",
+  "version": "1.0.0",
+  "description": "require code somewhere upwards in the file tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/_mocha test"
+  },
+  "author": "Marc Walter",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}
