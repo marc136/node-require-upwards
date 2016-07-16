@@ -1,0 +1,17 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "adictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+        "include": ["index.js", "README.md"],
+        "exclude": ["package.json"]
+    },
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true
+    },
+    "opts": {
+        "destination": "./doc/"
+    }
+}

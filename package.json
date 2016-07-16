@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/_mocha test",
-    "cover": "node node_modules/istanbul/lib/cli.js cover --dir test_coverage node_modules/mocha/bin/_mocha test"
+    "cover": "node node_modules/istanbul/lib/cli.js cover --dir test_coverage node_modules/mocha/bin/_mocha test",
+    "doc": "jsdoc -c jsdoc.conf.json"
   },
   "author": "Marc Walter",
   "repository": "marc136/node-require-upwards",

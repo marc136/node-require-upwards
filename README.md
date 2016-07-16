@@ -4,6 +4,7 @@ The tree is traversed synchronously.
 
 ## Motivation/Usage
 Instead of writing code like this:
+
 ```
 try {
   var abc = require('./abc.js');
@@ -17,6 +18,7 @@ try {
 ```
 
 I rather want to write something like this:
+
 ```
 var requireUp = require('require-upwards');
 var abc = requireUp('abc.js');
@@ -26,6 +28,7 @@ var abc = requireUp('abc.js');
 Version 1.1 adds an optional parameter to limit the maximum number of iterations.  
 
 Given this folder structure:
+
 ```
 fixtures
  ├─fix.js
@@ -35,9 +38,18 @@ fixtures
 ```
 
 When starting from the folder _fixtures/11/baum_
+
 ```
 requireUp('fix.js', 1)
 # will throw an Error
 requireUp('fix.js', 2)
 # will return the content of fixtures/fix.js
+```
+
+## Tests
+Unit tests are located in the folder _./test_.  
+To run them, execute
+
+```
+npm run test --silent
 ```
